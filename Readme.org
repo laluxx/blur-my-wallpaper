@@ -1,0 +1,33 @@
+* Blur My Wallpaper
+_Blur My Wallpaper_ overlays a fully transparent window on your desktop, ideal for those using a compositor, such as picom.
+
+** Table of Contents
+   - [[#Blur My Wallpaper][Blur My Wallpaper]]
+   - [[#Prerequisites][Prerequisites]]
+   - [[#Installation][Installation]]
+   - [[#Configuration][Configuration]]
+
+** Prerequisites
+   - A running instance of picom. Without picom, the overlaid window will appear black. For the desired blurred effect, enable the blur feature in picom.
+
+** Installation
+   Simply clone the repository and run the compiled binary:
+   #+BEGIN_SRC bash
+   git clone https://github.com/yourusername/blur-my-wallpaper.git
+   cd blur-my-wallpaper
+   ./blur-wallpaper
+   #+END_SRC
+
+** Configuration
+   Customize the behavior of _Blur My Wallpaper_ by editing the configuration file located at '~/.config/blur-my-wallpaper/conf'.
+
+   Here's a brief overview of the configuration options:
+   #+BEGIN_SRC
+   bar-position = top    ; options: top, bottom, left, right
+   bar-size = 24         ; size in pixels
+   #+END_SRC
+
+   - *bar-position*: Determines the position of your bar/dock.
+   - *bar-size*: Defines the height or width of your bar/dock in pixels.
+
+After modifying the configuration, simply restart _Blur My Wallpaper_ for changes to take effect.
